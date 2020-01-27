@@ -20,29 +20,115 @@
   font-size:30px;
   font-family:serif;
   margin: auto;
+  overflow-x: hidden;
+  overflow-y: hidden;
  }
+#anton {
+ color: #d4cccb;
+ background-color: #6eb4ff;
+ border-radius: 20px;
+ width: 30%;
+ position: relative;
+ left: 35%;
+ margin-top: 8px;
 
+}
+.extruded {
+    color: #888;
+    font-family: proxima-nova-1, proxima-nova-2, 'Helvetica Neue', Arial, sans-serif;
+    font-size: 48px;
+    font-weight: bold;
+    text-shadow: #000 1px 1px, #000 2px 2px, #000 3px 3px;
+    position: relative;
+    -moz-transition: all 0.3s ease-out; /* FF3.7+ */
+       -o-transition: all 0.3s ease-out; /* Opera 10.5 */
+  -webkit-transition: all 0.3s ease-out; /* Saf3.2+, Chrome */
+          transition: all 0.3s ease-out;
+}
+
+.extruded:hover {
+    color: #FFF;
+    text-shadow: #58E 1px 1px, #58E 2px 2px, #58E 3px 3px, #58E 4px 4px, #58E 5px 5px, #58E 6px 6px;
+    left: -6px;
+    top: -6px;
+}
+#wiki
+a:link{
+    text-decoration: none;
+    color: grey;
+}
+a:visited{
+
+  text-decoration: none;
+  color: purple;
+}
+a:hover{
+  transition-delay: 0.3s;
+  transition-duration: 2s;
+  color: grey;
+  background-color: pink;
+  border-radius: 20px;
+  text-decoration: none
+
+}
+a:active{
+  color: black;
+}
+a {
+  text-decoration: none;
+}
  table{
 
-  table-layout: fixed;
+  table-layout: auto;
+
+
  }
 
      td { color: white }
-  th {
-
-        width: 50%
-      }
-
 
 
       table, th, td {
       padding: 10px;
       border: 1px solid black;
-      border-collapse: collapse;
+      border-collapse: separate;
+      border-radius: 2px;
+      background-color: purple;
+      border
+
+
+
+      }
+      th {
+
+        width: 50%
       }
 
      body {background-color:#009688;
       }
+     #shawerma{
+       border-radius: 30px;
+
+     }
+
+     #knafeh{
+
+       border-radius: 30px;
+
+     }
+.box {
+ margin:50px;
+ width:300px;
+ height:50px;
+ border-radius:20px;
+ color:#fff;
+ text-align:center;
+ line-height:50px;
+ box-shadow:
+ 20px 5px 40px #CF77F3,
+   0px 5px 40px #009BFF,
+  -20px 5px 40px #2AC9DB;
+  background-image: linear-gradient(-90deg, #CF77F3 0%, #009BFF 47%, #2AC9DB 100%);
+}
 
 
 </style>
@@ -59,12 +145,15 @@
  </a>
  </div>
 
+<div id="anton">
 
-  <h1 style="font-size:50px;text-align:center;"> HI, my name is Anton! </h1>
+  <h1 style="font-size:50px;text-align:center;" class="extruded"> HI, my name is Anton!  </h1>
 
- <p style="font-size: 20px; text-align: center;"> <a href="#my-sexypoem"> The food of the century</p> </a>
+</div>
+ <p style="font-size: 20px; text-align: center;"> <a id="wiki" href="#my-sexypoem"> The food of the century</p> </a>
 
- <table (table of shawrma) style="width:100%">
+<center>
+ <table (table of shawrma) style="width:70%">
 
    <thead>
    <tr>
@@ -78,7 +167,7 @@
   <tbody>
 <tr>
 
- <td (shawerma) > <img src="https://media-cdn.tripadvisor.com/media/photo-s/12/db/89/ff/classica-chicken-wrap.jpg" alt="shawerma" style="width:250px"> </td>
+ <td (shawerma) > <center><img id="shawerma" src="https://media-cdn.tripadvisor.com/media/photo-s/12/db/89/ff/classica-chicken-wrap.jpg" alt="shawerma" style="width:250px"> </center> </td>
  <td> <strong>The best food in the planet! </strong>
 
  <br>
@@ -88,7 +177,7 @@
 
  <tr>
 
-  <td (knafeh) > <img src="https://peartreekitchen.com/wp-content/uploads/2018/09/Knafeh-15.jpg" alt="knafeh" style="width:250px"> </td>
+  <td (knafeh) > <center> <img id="knafeh" src="https://peartreekitchen.com/wp-content/uploads/2018/09/Knafeh-15.jpg" alt="knafeh" style="width:250px"></center> </td>
   <td  style="font-size=200%"> <strong>the best sweet in the world!
 
    </strong>
@@ -97,6 +186,7 @@
    </td>
 
 </tbody>
+</center>
  </table>
 
 
@@ -107,11 +197,13 @@
   nothing that you
   can do that can affect
   the existence of the powers
-  in the power power!
+  in the blyat blyat!
  </pre>
 
 </div>
-
+<div class="box">
+this a button
+</div>
 
 
 
